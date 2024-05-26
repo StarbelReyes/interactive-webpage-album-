@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 20%; /* Adjust width as needed */
+    width: 35%; /* Adjust width as needed */
     height: 100%; /* Full height */
     color: #fff; /* Text color */
     display: flex;
@@ -13,15 +13,30 @@
     box-sizing: border-box;
 }
 
-#song-title {
-    font-size: 1 em;
+
+@font-face{
+    font-family: 'Heavitas';
+    src: url('fonts/Heavitas.woff2') format('woff2'),
+         url('fonts/Heavitas.woff') format('woff'),
+         url('fonts/Heavitas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#album-title {
+    font-size: 5rem;
     margin-bottom: 10px;
-    text-align: center;
+    font-family: 'Heavitas', sans-serif;
+    margin-left: 30%;
+    color: #e38928;
 }
 
 #artist-song-info {
-    font-size: 20 px;
+    font-size: 1rem;
     text-align: center;
+    font-family: 'Heavitas', sans-serif;
+    margin-left: 30%;
+    color: #e38928;
 }
 
 body {
@@ -59,7 +74,7 @@ body {
 
 #drag-container img,
 #drag-container video {
-    margin-top: 100%;
+    margin-top: 250%;
     transform-style: preserve-3d;
     position: absolute;
     width: 150%;
@@ -84,7 +99,7 @@ body {
     font-size: 3rem;
     font-family: 'All Rights Reserved', sans-serif;
     position: absolute;
-    top: 150%;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%) rotateX(90deg);
     color: #e30404;

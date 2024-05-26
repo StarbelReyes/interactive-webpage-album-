@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function changeBackgroundWithTransition(imageUrl, songTitle, artistSongInfo) {
             document.body.style.transition = "background-image 0.5s ease"; // Enable transition effect
             document.body.style.backgroundImage = "url('" + imageUrl + "')"; // Set new background image
-            document.body.style.backgroundImage = "linear-gradient(to right, rgba(0,0,0,1) 30%, rgba(0,0,0,0)), url('" + imageUrl + "')";
+            document.body.style.backgroundImage = "linear-gradient(to right, rgba(0,0,0,1) , rgba(0,0,0,0)), url('" + imageUrl + "')";
             document.getElementById('song-title').innerText = songTitle;
             document.getElementById('artist-song-info').innerText = artistSongInfo;
         }
@@ -439,7 +439,7 @@ function changeBackgroundWithTransition(imageUrl) {
 }   
 
 function applyLinearGradient() {
-    document.getElementById('background').style.background = "linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0))"; // Apply linear gradient
+    document.getElementById('background').style.background = "linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0))"; // Apply linear gradient
 }
 
 // Function to retrieve song information based on the image ID
@@ -448,7 +448,10 @@ function getSongInfo(imageId) {
    var songInfoMap = {
        "img1": { title: "Walk With Me", artist: "Starbel", album: "Someone You Forgot" },
        "img2": { title: "Michael Scott", artist: "Starbel", album: "Someone You Forgot" },
-       "img3": { title: "Song 3", artist: "Starbel", album: "Someone You Forgot" },
+       "img3": { title: "Wouldn't Change This", artist: "Starbel", album: "Someone You Forgot"},
+       "img4": { title: "How I Live INTERLUDE", artist: "Starbel", album: "Someone You Forgot"},
+       "img5": { title: "Tickin Time Bomb", artist: "Starbel", album: "Someone You Forgot"},
+       "img6": { title: "Animal", artist: "Starbel", album: "Someone You Forgot"},
        // Add more mappings as needed for other images
    };
 
