@@ -1,0 +1,185 @@
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%; /* Adjust width as needed */
+    height: 100%; /* Full height */
+    color: #fff; /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#song-title {
+    font-size: 1 em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#artist-song-info {
+    font-size: 20 px;
+    text-align: center;
+}
+
+body {
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: #252828;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+/* CSS styles for the carousel */
+#container {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center; /* Center horizontally */
+}
+
+#drag-container,
+#spin-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) scale(1);
+}
+
+#drag-container img,
+#drag-container video {
+    margin-top: 100%;
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 150%;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: 0 0 8px #e00707;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover,
+#drag-container video:hover {
+    box-shadow: 0 0 15px rgba(175, 8, 8, 0.867);
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+@font-face {
+    font-family: 'All Rights Reserved';
+    src: url('fonts/AllRightsReserved.ttf') format('truetype');
+}
+
+#drag-container p {
+    font-size: 3rem;
+    font-family: 'All Rights Reserved', sans-serif;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    color: #e30404;
+}
+
+#ground {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    background: radial-gradient(c);
+}
+
+#music-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes spinRevert {
+    from {
+        transform: rotateY(360deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+#drag-container {
+    margin-bottom: 400px; /* Add some space between the carousel and the audio player */
+}
+
+#audio-player {
+    text-align: center; /* Center the audio player */
+}
+
+#audio-element {
+    display: none; /* Hide the audio element */
+}
+
+#player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the controls */
+    gap: 10px;
+    margin-top: 10px; /* Add some space between the audio controls */
+}
+
+#player-controls button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some space between the control buttons */
+    transition: transform 0.09s ease;
+}
+
+#player-controls button:hover {
+    transform: translatey(-5px);
+    background-color: #0056b3;
+    
+}
+
+#song-duration {
+    font-size: 16px;
+    color: #fff;
+}
+
+#description {
+    color: white;
+}
+
+#inspiration {
+    color: #fff;
+}
+
+#lyrics {
+    color: rgb(227, 12, 12);
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'All Rights Reserved', sans-serif;
+}
+
