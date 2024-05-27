@@ -67,6 +67,7 @@ body {
         height: auto;
         position: relative;
         padding: 10px;
+        background-size: cover;
     }
 
     #album-title,
