@@ -89,7 +89,29 @@ body {
 
     #container {
         width: 100%;
-        padding: 0 20px;
+        padding: 20px;
+    }
+
+    #drag-container,
+    #spin-container {
+        transform: rotateX(0deg) scale(0.8); /* Adjust rotation and scale for mobile */
+    }
+
+    #drag-container img,
+    #drag-container video {
+        margin-top: 100%; /* Reduce margin for smaller screens */
+        width: 100%; /* Adjust width to fit better on smaller screens */
+    }
+
+    #drag-container p {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+        top: 150%; /* Adjust position for smaller screens */
+    }
+
+    #ground {
+        width: 100%; /* Make ground container responsive */
+        height: 100%; /* Make ground container responsive */
+        top: auto; /* Adjust top position for smaller screens */
     }
 }
 
