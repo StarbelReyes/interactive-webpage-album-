@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Define the LRC content for each song
-    var songLyrics = {
+    /* var songLyrics = {
         "img1": `[00:01.00]Walk with me
                  [00:05.00]Let's go for a walk
                  [00:10.00]And talk about life`,
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "img7": `[00:01.00]Extra Track 2
                  [00:05.00]Another extra track
                  [00:10.00]Enjoy it too`
-    };
+    };*/
 
     // Variables to store the current lyrics and audio element
     var currentLyrics = [];
