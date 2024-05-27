@@ -363,12 +363,12 @@ document.addEventListener('DOMContentLoaded', function () {
         "img7": `[00:01.00]Extra Track 2
                  [00:05.00]Another extra track
                  [00:10.00]Enjoy it too`
-    };*/
+    };
 
     // Variables to store the current lyrics and audio element
     var currentLyrics = [];
     var audioElement = document.getElementById('audio-element');
-    var lyricsContainer = document.getElementById('lyrics');
+    var lyricsContainer = document.getElementById('lyrics');*/
 
     // Initial playback control button event listeners
     document.getElementById('play-button').addEventListener('click', function() {

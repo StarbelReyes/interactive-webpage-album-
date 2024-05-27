@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 35%; /* Adjust width as needed */
+    width: 30%; /* Adjust width as needed */
     height: 100%; /* Full height */
     color: #fff; /* Text color */
     display: flex;
@@ -54,6 +54,44 @@ body {
     background-position: center; /* Center the background */
     background-repeat: no-repeat; /* Prevent background image from repeating */
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #background {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    #album-title,
+    #artist-song-info {
+        margin-left: 0;
+        text-align: left;
+        width: 100%; /* Ensure they take the full width of their container */
+        padding: 0 10px; /* Add some padding for better spacing */
+    }
+
+    #album-title {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 5px; /* Reduce bottom margin */
+    }
+
+    #artist-song-info {
+        font-size: 1rem; /* Keep font size but ensure text alignment */
+    }
+
+    #container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
 
 /* CSS styles for the carousel */
 #container {
